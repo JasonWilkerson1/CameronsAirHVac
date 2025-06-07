@@ -67,7 +67,7 @@ Welcome to the CameronsAirHVac project! This is a static website built using the
 This is a personal project, but contributions are welcome. Please fork the repository and submit pull requests for enhancements (e.g., additional SEO tweaks, new features).
 
 ## License
-- Based on the Arsha template by BootstrapMade, licensed under [Creative Commons Attribution 3.0](https://bootstrapmade.com/license/). Modify and use commercially, but retain attribution unless purchasing the pro version.
+- Based on the Arsha template by BootstrapMade, licensed under [Creative Commons Attribution 3.0](https://bootstrapmade.com/license/).
 
 ## Roadmap
 - Add more service pages (e.g., "AC Repair," "Maintenance").
