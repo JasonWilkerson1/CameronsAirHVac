@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "scripts": {
     "build": "echo 'No build step needed for static site'",
-    "postinstall": "netlify --version" 
+    "postinstall": "netlify --version"
   },
   "dependencies": {
     "nodemailer": "^6.9.13"
   },
   "devDependencies": {
-    "netlify-cli": "^17.12.0"
+    "netlify-cli": "^17.38.1"
   }
 }
