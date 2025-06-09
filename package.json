@@ -2,9 +2,13 @@
   "name": "cameronsairhvac",
   "version": "1.0.0",
   "scripts": {
-    "build": "echo 'No build step needed for static site'"
+    "build": "echo 'No build step needed for static site'",
+    "postinstall": "netlify --version" 
   },
   "dependencies": {
     "nodemailer": "^6.9.13"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.12.0"
   }
 }
