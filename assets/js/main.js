@@ -5,6 +5,48 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+document.getElementById('contact-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const loading = form.querySelector('.loading');
+  const errorMessage = form.querySelector('.error-message');
+  const sentMessage = form.querySelector('.sent-message');
+
+  loading.style.display = 'block';
+  errorMessage.style.display = 'none';
+  sentMessage.style.display = 'none';
+
+  const formData = {
+    name: form.querySelector('#name-field').value,
+    email: form.querySelector('#email-field').value,
+    subject: form.querySelector('#subject-field').value,
+    message: form.querySelector('#message-field').value,
+  };
+
+  try {
+    const response = await fetch('/.netlify/functions/send-email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      sentMessage.style.display = 'block';
+      form.reset();
+    } else {
+      errorMessage.textContent = result.message;
+      errorMessage.style.display = 'block';
+    }
+  } catch (error) {
+    errorMessage.textContent = 'An error occurred. Please try again.';
+    errorMessage.style.display = 'block';
+  } finally {
+    loading.style.display = 'none';
+  }
+});
 
 (function() {
   "use strict";
