@@ -157,8 +157,12 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 50px;
   margin-right: 8px;
+}
+
+.header .logo img:hover {
+  transform: scale(1.1);
 }
 
 .header .logo h1 {
