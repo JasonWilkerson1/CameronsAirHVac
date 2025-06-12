@@ -1,0 +1,31 @@
+plugins = []
+functionsDirectory = "D:\\Portfolio\\CameronsAirHVac\\netlify\\functions"
+functionsDirectoryOrigin = "config-v1"
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "D:\\Portfolio\\CameronsAirHVac"
+publishOrigin = "config"
+commandOrigin = "config"
+base = "D:\\Portfolio\\CameronsAirHVac"
+command = "npm install"
+functions = "D:\\Portfolio\\CameronsAirHVac\\netlify\\functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
