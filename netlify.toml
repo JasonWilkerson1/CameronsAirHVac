@@ -1,4 +1,3 @@
 [build]
 command = "npm install && npx netlify build"
 publish = "/"
-functions = "netlify/functions"
