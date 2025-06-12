@@ -37,7 +37,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
       sentMessage.style.display = 'block';
       form.reset();
     } else {
-      errorMessage.textContent = result.message;
+      errorMessage.textContent = result.error || 'An error occurred';
       errorMessage.style.display = 'block';
     }
   } catch (error) {
