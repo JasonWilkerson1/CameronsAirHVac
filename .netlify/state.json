@@ -1,3 +1,21 @@
 {
-	"siteId": "a802b875-abdf-480e-9de2-7ac680e6e21f"
+	"siteId": "a802b875-abdf-480e-9de2-7ac680e6e21f",
+	"geolocation": {
+		"data": {
+			"city": "St Louis",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "MO",
+				"name": "Missouri"
+			},
+			"timezone": "America/Chicago",
+			"latitude": 38.6664,
+			"longitude": -90.322,
+			"postalCode": "63130"
+		},
+		"timestamp": 1749767739460
+	}
 }

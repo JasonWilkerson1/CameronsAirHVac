@@ -1391,6 +1391,88 @@ section,
   position: relative;
   clip-path: inset(0);
 }
+/* Responsive iframe container */.section.light-background {
+  background-color: #f8f9fa;
+  padding: 40px 0; /* Reduced padding for a modern look */
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  color: #1a73e8;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Calendar Container Styling */
+.calendar-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Max width for a clean, centered look */
+  margin: 20px auto; /* Reduced margin for less padding */
+  overflow: hidden;
+}
+
+.calendar-container iframe {
+  width: 100%;
+  min-height: 600px; /* Adjusted for modern fit, can be tweaked */
+  border: none; /* Removed border for a sleek look */
+  display: block;
+}
+
+/* Scheduling Button Container */
+.scheduling-button-container {
+  display: none; /* Hidden by default, shown on mobile */
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (min-width: 550px) {
+  .calendar-container {
+    display: block; /* Show calendar on desktop */
+  }
+  .scheduling-button-container {
+    display: none; /* Hide button on desktop */
+  }
+}
+
+@media (max-width: 549px) {
+  .calendar-container {
+    display: none; /* Hide calendar on mobile */
+  }
+  .scheduling-button-container {
+    display: block; /* Show button on mobile */
+  }
+  .section.light-background {
+    padding: 20px 0; /* Reduced padding for mobile */
+  }
+  .section-title h2 {
+    font-size: 2rem; /* Slightly smaller for mobile */
+  }
+  .section-title p {
+    font-size: 1rem;
+  }
+}
+
+/* Modern Adaptive Adjustments */
+@media (min-width: 1200px) {
+  .calendar-container {
+    max-width: 900px; /* Slightly wider for large screens */
+    margin: 30px auto;
+  }
+  .calendar-container iframe {
+    min-height: 650px; /* Adjusted for larger screens */
+  }
+}
 
 .call-to-action img {
   position: fixed;

@@ -1,12 +1,8 @@
-plugins = []
 functionsDirectory = "D:\\Portfolio\\CameronsAirHVac\\netlify\\functions"
 functionsDirectoryOrigin = "config-v1"
-headers = []
+headersOrigin = "config"
+plugins = []
 redirects = []
-
-[functions]
-
-[functions."*"]
 
 [build]
 publish = "D:\\Portfolio\\CameronsAirHVac"
@@ -29,3 +25,15 @@ functions = "D:\\Portfolio\\CameronsAirHVac\\netlify\\functions"
 [build.processing.js]
 
 [build.services]
+
+[functions]
+
+[functions."*"]
+
+[[headers]]
+for = "/.netlify/functions/*"
+
+[headers.values]
+Access-Control-Allow-Origin = "*"
+Access-Control-Allow-Methods = "GET, POST, OPTIONS"
+Access-Control-Allow-Headers = "Content-Type"
